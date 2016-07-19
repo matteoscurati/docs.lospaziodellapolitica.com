@@ -1,8 +1,7 @@
 {
-  "name": "midgulp",
+  "name": "Docs by Lo Spazio della Politica",
   "version": "1.0.0",
-  "description": "A Middleman template using Slim, Gulp, Babel and Bemo",
-  "main": "index.js",
+  "description": "A docs archive for LSDP's member",
   "author": "Matteo Scurati",
   "license": "ISC",
   "browser": {
