@@ -1,9 +1,13 @@
 {
-  "name": "Docs by Lo Spazio della Politica",
+  "name": "docs",
   "version": "1.0.0",
   "description": "A docs archive for LSDP's member",
   "author": "Matteo Scurati",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matteoscurati/docs.lospaziodellapolitica.com"
+  },
   "browser": {
     "modernizr": "./source/assets/javascripts/vendor/modernizr.js",
     "jQuery": "./node_modules/jquery/dist/jquery.js"
@@ -55,6 +59,7 @@
   },
   "dependencies": {
     "jquery": "^3.1.0",
-    "jquery-ui": "^1.12.0"
+    "jquery-ui": "^1.12.0",
+    "slideout": "^0.1.12"
   }
 }
