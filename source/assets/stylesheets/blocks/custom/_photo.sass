@@ -8,12 +8,21 @@
 
 .photo__body__inner
   @extend .hero__body__inner
+  +padding-bottom(0)
 
 .photo__heading
   @extend .hero__heading
 
 .photo__text
   @extend .hero__text
+  +padding-bottom(4)
+
+.photo__img
+  background: image-url("lsdp_home.jpg") no-repeat center center
+  background-size: contain
+  max-width: 500px
+  +padding(20)
+  margin: 0 auto
 
 .photo__actions
   @extend .hero__actions

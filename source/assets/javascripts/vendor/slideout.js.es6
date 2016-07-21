@@ -7,6 +7,7 @@ const slideout = new Slideout({
   'tolerance': 70
 });
 
-document.querySelector('.toggle-button').addEventListener('click', function() {
+document.querySelector('.toggle-menu').addEventListener('click', function() {
   slideout.toggle();
+  $(this).toggleClass('is-opened');
 });

@@ -1,0 +1,42 @@
+.toggle-menu
+  position: absolute
+  top: 15px
+  left: 50px
+  transform: translate(-50%, 0)
+  display: block
+  position: relative
+  height: 26px
+  width: 30px
+
+.toggle-menu span,
+.toggle-menu:before,
+.toggle-menu:after
+  display: block
+  background: $blue
+  height: 5px
+  width: 30px
+  border-radius: 2px
+  position: absolute
+  transition: .3s
+  transform-origin: 0 50%
+
+.toggle-menu:before
+  content: ''
+  top: 0
+
+.toggle-menu:after
+  content: ''
+  bottom: 0
+
+.toggle-menu span
+  top: 50%
+  transform: translateY(-50%)
+
+.toggle-menu.is-opened span
+  opacity: 0
+
+.toggle-menu.is-opened:before
+  transform: rotate(45deg)
+
+.toggle-menu.is-opened:after
+  transform: rotate(-45deg)
