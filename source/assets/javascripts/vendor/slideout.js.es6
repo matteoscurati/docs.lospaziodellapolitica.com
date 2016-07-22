@@ -9,5 +9,12 @@ const slideout = new Slideout({
 
 document.querySelector('.toggle-menu').addEventListener('click', function() {
   slideout.toggle();
-  $(this).toggleClass('is-opened');
+});
+
+slideout.on('open', function() {
+  $('.toggle-menu').addClass('is-opened');
+});
+
+slideout.on('close', () => {
+  $('.toggle-menu').removeClass('is-opened');
 });
