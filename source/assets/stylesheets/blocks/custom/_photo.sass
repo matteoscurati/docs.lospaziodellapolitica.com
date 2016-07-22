@@ -1,31 +1,20 @@
 .photo
-  @extend .hero
   background-color: $light-grey
   color: white
-
-.photo__body
-  @extend .hero__body
-
-.photo__body__inner
-  @extend .hero__body__inner
-  +padding-bottom(0)
-
-.photo__heading
-  @extend .hero__heading
+  +padding-top(4)
+  overflow: hidden
+  text-align: center
 
 .photo__text
-  @extend .hero__text
+  max-width: 600px
+  margin: 0 auto
   +padding-bottom(4)
+  +body-font-family
+  +font-size(gamma)
+  line-height: 1.2
 
 .photo__img
   display: block
+  overflow: hidden
   max-width: 800px
-  width: 100%
-  margin: 0 auto
-  +padding-bottom(0)
-
-.photo__actions
-  @extend .hero__actions
-
-.photo__actions
-  @extend .hero__actions
+  margin: 0 auto -6px auto
