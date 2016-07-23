@@ -37,6 +37,17 @@ activate :external_pipeline,
   source: "dist",
   latency: 1
 
+###
+# Dato configuration
+###
+
+activate :dato,
+  domain: 'admin-docs.lospaziodellapolitica.com',
+  token: '518d104e9d46d8536d8a124898efa5a38115baba501b4ba058',
+  base_url: 'https://docs.lospaziodellapolitica.com'
+
+set :url_root, 'https://docs.lospaziodellapolitica.com'
+
 # Build-specific configuration
 configure :build do
   ignore 'assets/*'
