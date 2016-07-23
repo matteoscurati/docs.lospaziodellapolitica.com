@@ -1,26 +1,19 @@
 .main-nav
+  background-color: $light-bg-color
 
 .main-nav__inner
-  display: flex
-  align-items: center
+  margin: 0 auto
   +vertical-padding(2)
 
 .main-nav__logo
   background: image-url("logo--small.svg") no-repeat left center
   background-size: contain
   width: 60px
-  +margin-right(1)
-  padding-top: 10%
-
-  +at-breakpoint(lap)
-    padding-top: 5%
+  height: 60px
+  margin: 0 auto
 
 .main-nav__space
   flex: 1
 
 .main-nav__item
-  display: inline-block
-  +margin-right(2)
-
-  &:last-child
-    +margin-right(0)
+  display: block
