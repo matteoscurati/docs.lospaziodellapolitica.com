@@ -22,10 +22,10 @@ activate :dato,
 
 all_articles = dato.articles.sort_by(&:position)
 
-proxy "/index.html", "/templates/index.html", locals: { articles: all_articles }
+proxy "/index.html", "/templates/index.html", ignore: true, locals: { articles: all_articles }
 
 dato.articles.each do |article|
-  proxy "/articles/#{article.slug}.html", "/templates/detail.html", locals: { article: article }
+  proxy "/articles/#{article.slug}.html", "/templates/detail.html", ignore: true, locals: { article: article }
 end
 
 # Localization
