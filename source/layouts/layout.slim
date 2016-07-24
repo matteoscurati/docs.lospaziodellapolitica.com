@@ -5,7 +5,8 @@ html
     meta charset="utf-8"
     meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"
 
-    title = dato.homepage.title
+    = dato_favicon_meta_tags(theme_color: '#0770B1')
+    = yield_content :head
 
     = stylesheet_link_tag :application
   body class= page_classes

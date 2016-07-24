@@ -1,0 +1,8 @@
+.wrap.space--top-3
+  - articles.each do |article|
+    = link_to("/articles/#{article.slug}.html", class: "article") do
+      .article__inner
+        h1.article__title = article.title
+        h2.article__excerpt = article.excerpt
+        .formatted-content
+          p = truncate_words(Sanitize.fragment(article.content), lenght: 50)
