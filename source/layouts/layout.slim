@@ -12,5 +12,6 @@ html
   body class= page_classes
     =  partial 'shared/main-nav'
     main.slideout-panel#panel
+      = partial 'shared/toggle-menu'
       = yield
     = javascript_include_tag :application
