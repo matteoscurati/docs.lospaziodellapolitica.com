@@ -6,4 +6,4 @@
           h1.article__title = article.title
           h2.article__excerpt = article.excerpt
           .formatted-content
-            p = truncate_words(Sanitize.fragment(article.content), lenght: 100)
+            = truncate_words(Sanitize.fragment(article.content), lenght: 100)
