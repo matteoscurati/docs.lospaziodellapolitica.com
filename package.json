@@ -38,7 +38,7 @@
     "gulp-imagemin": "^3.0.2",
     "gulp-jshint": "^2.0.1",
     "gulp-load-plugins": "^1.2.4",
-    "gulp-lwip": "git+ssh://git@github.com:matteoscurati/gulp-lwip.git#5bff59f2661dc25bdfc9655a48ae5d3a86872f79",
+    "gulp-lwip": "^0.1.2",
     "gulp-notify": "^2.2.0",
     "gulp-postcss": "^6.1.1",
     "gulp-rename": "^1.2.2",
