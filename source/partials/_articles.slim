@@ -6,4 +6,9 @@
           h1.article__title = article.title
           h2.article__excerpt = article.excerpt
           .formatted-content
-            = truncate_words(Sanitize.fragment(article.content), lenght: 100)
+            = truncate_words(Sanitize.fragment(article.content), lenght: 150)
+          .article__metas
+            .article__author--photo
+            .article__author Matteo Scurati
+            /- if article.category.category.name
+              /.article__category = article.category.category.name

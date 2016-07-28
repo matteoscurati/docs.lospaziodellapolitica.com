@@ -1,19 +1,51 @@
 .article, a.article
   text-decoration: none !important
   +padding-bottom(3)
+  max-width: 800px
+  border-bottom: $very-light-grey 1px solid
+  margin: 0 auto
+  +margin-bottom(5)
 
 .article__inner
-  max-width: 800px
-  margin: 0 auto
 
 .article__title
   +heading-font-family
-  +font-size(beta)
+  +font-size(alpha)
 
 .article__excerpt
-  +font-size(smallprint)
+  +font-size(epsilon)
   +body-font-family
-  +padding-bottom(3)
+  +padding-bottom(1)
   color: $light-grey
   text-transform: uppercase
 
+.article__metas
+  +padding-top(2)
+  display: block
+  color: $light-grey
+
+.article__metas__items
+  vertical-align: middle
+  line-height: normal
+  display: inline-block
+
+.article__author--photo
+  @extend .article__metas__items
+  background-color: $grey
+  height: 30px
+  width: 30px
+  border-radius: 100%
+
+.article__author
+  @extend .article__metas__items
+  +padding-left(1.5)
+
+  &:after
+    +margin-right(1.5)
+    +margin-left(1.5)
+    content: "|"
+
+.article__category
+  @extend .article__metas__items
+  line-height: normal
+  text-transform: uppercase
