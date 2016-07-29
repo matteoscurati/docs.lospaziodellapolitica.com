@@ -4,7 +4,12 @@
   max-width: 800px
   border-bottom: $very-light-grey 1px solid
   margin: 0 auto
-  +margin-bottom(5)
+  +margin-bottom(3)
+
+a.article
+  &:hover
+    .article__title
+      text-decoration: underline
 
 .article__inner
 
@@ -13,7 +18,7 @@
   +font-size(alpha)
 
 .article__excerpt
-  +font-size(epsilon)
+  +font-size(milli)
   +body-font-family
   +padding-bottom(1)
   color: $light-grey
@@ -23,6 +28,7 @@
   +padding-top(2)
   display: block
   color: $light-grey
+  +font-size(epsilon)
 
 .article__metas__items
   vertical-align: middle
@@ -35,6 +41,7 @@
   height: 30px
   width: 30px
   border-radius: 100%
+  background-size: cover
 
 .article__author
   @extend .article__metas__items
