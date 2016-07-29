@@ -1,10 +1,14 @@
-/- content_for(:head)
-  /= dato_meta_tags(dato.article)
+- content_for(:head)
+  = dato_meta_tags(article)
 
-.wrap
-  .article.space--top-3
+.wrap.space--top-3
+  .article
     .article__inner
       h1.article__title = article.title
-      h2.article__subtitle = article.subtitle
-      .formatted-content
+      - if article.subtitle
+        h2.article__subtitle = article.subtitle
+      - if article.hero
+        .article__hero style="background: url('#{article.hero.file.to_url}') center center no-repeat; background-size: cover;"
+          = article.hero
+      .formatted-content.article__content
         = article.content
