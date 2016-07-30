@@ -9,6 +9,5 @@
         h2.article__subtitle = article.subtitle
       - if article.hero
         .article__hero style="background: url('#{article.hero.file.to_url}') center center no-repeat; background-size: cover;"
-          = article.hero
       .formatted-content.article__content
         = article.content
