@@ -8,6 +8,6 @@
         = link_to("/") do
           .main-nav__item.space--bottom-3 HOME
       nav.main-nav__nav
-        - dato.articles.each do |art|
+        - dato.articles.sort_by(&:position).each do |art|
           = link_to("/articles/#{art.slug}.html") do
             .main-nav__item = truncate(art.title, lenght: 15)
